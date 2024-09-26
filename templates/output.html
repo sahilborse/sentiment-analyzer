@@ -1,0 +1,26 @@
+<!-- templates/output.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='output.css') }}">
+ 
+</head>
+<body>
+    <div class="result-container">
+        <h1>Sentiment Analysis Results</h1>
+        <div class="score positive">
+            Positive Score: {{ postive }}
+        </div>
+        <div class="score negative">
+            Negative Score: {{ negative }}
+        </div>
+        <div class="score Neutral">
+            Negative Score: {{neutral }}
+        </div>
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>

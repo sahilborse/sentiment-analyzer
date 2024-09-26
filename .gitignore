@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+myenv/
+env/
+.venv/
+.env
+
+# IDE or editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+
+# Flask instance folder
+instance/
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/settings.json
+
+# Pytest cache
+.cache
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Secret keys or config files
+config.py

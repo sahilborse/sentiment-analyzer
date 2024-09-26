@@ -1,0 +1,23 @@
+<!-- templates/upload.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV/XLSX File</title>
+    
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="upload-container">
+        <div style="color:red">{{error}}</div>
+        <h1>Upload CSV/XLSX File </h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv, .xlsx" required>
+            <button type="submit">Upload</button>
+        </form>
+        <p>Accepted file formats: <strong>CSV, XLSX</strong></p>
+        <p>Upload csv or xlsx file containing reviews more than 50 for Emotion Detection  </p>
+    </div>
+</body>
+</html>
