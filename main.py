@@ -86,4 +86,5 @@ def analyze_sentiment(reviews):
     
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.getenv("PORT", 4000))# default to host is not specified
+    app.run(host="0.0.0.0", port=port)
